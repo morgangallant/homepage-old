@@ -35,7 +35,9 @@ export default function Index() {
         I do a lot of writing on my{" "}
         <a href="https://morgangallant.substack.com">blog</a>.
       </p>
-      <p>My machines:</p>
+      <p>
+        <a href="/machines.jpg">My machines:</a>
+      </p>
       <ul>
         {Machines.map((desc, i) => {
           return <Pinger key={i} url={desc.url} name={desc.name} />;
