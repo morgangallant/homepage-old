@@ -36,7 +36,7 @@ export default function Index() {
         <a href="https://morgangallant.substack.com">blog</a>.
       </p>
       <p>
-        <a href="/machines.jpg">My machines:</a>
+        My machines: (<a href="/machines.jpg">picture</a>)
       </p>
       <ul>
         {Machines.map((desc, i) => {
