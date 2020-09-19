@@ -98,7 +98,9 @@ export default function Index() {
           <a href="https://carolchen.me">collab</a>).
         </li>
       </ul>
-      <p>Some books I've especially enjoyed reading:</p>
+      <p>
+        Some books I've especially enjoyed reading (in no particular order):
+      </p>
       <ul>
         {Books.map((name, i) => {
           return <li key={i}>{name}</li>;
