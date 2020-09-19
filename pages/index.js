@@ -20,6 +20,17 @@ export default function Index() {
     },
   ];
 
+  /**
+   * List of books I've especially enjoyed reading.
+   */
+  const Books = [
+    "The Value of Everything (Mazzucato)",
+    "Elon Musk (Vance)",
+    "The Art of Doing Science and Engineering (Hamming)",
+    "Superintelligence (Bostrom)",
+    "Sapiens (Harari)",
+  ];
+
   return (
     <Layout>
       <img
@@ -86,6 +97,12 @@ export default function Index() {
           Twitter mutuals and get notified if they like you back (
           <a href="https://carolchen.me">collab</a>).
         </li>
+      </ul>
+      <p>Some books I've especially enjoyed reading:</p>
+      <ul>
+        {Books.map((name, i) => {
+          return <li key={i}>{name}</li>;
+        })}
       </ul>
       <p>Other links:</p>
       <ul>
