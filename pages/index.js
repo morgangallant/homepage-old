@@ -30,6 +30,7 @@ export default function Index() {
     "Superintelligence (Bostrom)",
     "Sapiens (Harari)",
     "I, Robot (Asimov)",
+    "Stubborn Attachments (Cowen)",
   ];
 
   return (
