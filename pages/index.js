@@ -29,6 +29,7 @@ export default function Index() {
     "The Art of Doing Science and Engineering (Hamming)",
     "Superintelligence (Bostrom)",
     "Sapiens (Harari)",
+    "I, Robot (Asimov)",
   ];
 
   return (
