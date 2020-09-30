@@ -31,6 +31,7 @@ export default function Index() {
     "Sapiens (Harari)",
     "I, Robot (Asimov)",
     "Stubborn Attachments (Cowen)",
+    "Zero to One (Thiel)",
   ];
 
   return (
