@@ -9,7 +9,7 @@ const LogsURL = "https://xor.dev/api/logs/get";
 /**
  * The authentication key needed to read logs.
  */
-const LogsKey = "IDDkVKt52g5P3kgBZX7mS1C5CMuguZn833eeHGCQbXGTReFZiLF4yaxPKHKL";
+const LogsKey = "bPnmmZV6tK2WntaeCeLekUOGUSMywx5zQBEdSmSwByeFbrTP1o19fN5pyP4v";
 
 export default function Logs() {
   const [logs, setLogs] = useState(null);
@@ -28,7 +28,8 @@ export default function Logs() {
         body: JSON.stringify({}),
       });
       if (response.status == 200) {
-        setLogs(await response.json());
+        const json = await response.json();
+        setLogs(json);
       } else {
         console.log("error", response.status, response.statusText);
       }
@@ -36,5 +37,23 @@ export default function Logs() {
     doRequest();
   }, []);
 
-  return <Layout>{logs ? <div></div> : <p>Loading logs...</p>}</Layout>;
+  return (
+    <Layout>
+      {logs ? (
+        <div>
+          <ul>
+            {logs.logs.map((l, i) => {
+              return (
+                <li key={i}>
+                  ({l.timestamp}) {l.contents}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : (
+        <p>Loading logs...</p>
+      )}
+    </Layout>
+  );
 }
