@@ -46,7 +46,8 @@ export default function Index() {
         <a href="mailto:morgan@morgangallant.com">morgan@morgangallant.com</a>.
       </p>
       <p>
-        I do a lot of writing on my{" "}
+        I record everything I do on my <a href="/logs">log</a> and I write
+        random essays on my{" "}
         <a href="https://morgangallant.substack.com">blog</a>.
       </p>
       <p>
