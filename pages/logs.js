@@ -43,9 +43,11 @@ export default function Logs() {
         <div>
           <ul>
             {logs.logs.map((l, i) => {
+              const date = Date.parse(l.timestamp);
+              const dstr = new Date(date).toLocaleString();
               return (
                 <li key={i}>
-                  ({l.timestamp}) {l.contents}
+                  ({dstr}) {l.contents}
                 </li>
               );
             })}
