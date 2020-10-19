@@ -44,7 +44,7 @@ export default function Logs() {
         <strong>Morgan's Logs</strong>
       </p>
       <p>
-        Stole this idea from a <a href="https://farza.party/logs">friend</a> -
+        Stole this idea from a <a href="http://farza.party/logs">friend</a> -
         daily logs to "debug" myself. Will eventually incorporate food intake
         and sleep.
       </p>
