@@ -9,7 +9,7 @@
     "export": "next build && next export -o _static/"
   },
   "dependencies": {
-    "next": "9.5.2",
+    "next": "^10.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }
