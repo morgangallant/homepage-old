@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Pinger from "../components/pinger";
+import Image from "next/image";
 
 export default function Index() {
   /**
@@ -36,7 +37,7 @@ export default function Index() {
 
   return (
     <Layout>
-      <img
+      <Image
         src="/images/profile.jpg"
         alt="profile picture"
         style={{ width: 150 }}
