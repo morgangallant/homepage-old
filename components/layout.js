@@ -60,12 +60,12 @@ export default function Layout({ children }) {
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
 
-        {/* Plausible Analytics */}
+        {/* Realtime Analytics */}
         <script
           async
           defer
           data-domain="morgangallant.com"
-          src="https://plausible.io/js/plausible.js"
+          src="https://stats.morgangallant.com/js/index.js"
         ></script>
       </Head>
     );
