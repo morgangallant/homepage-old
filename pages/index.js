@@ -37,12 +37,7 @@ export default function Index() {
 
   return (
     <Layout>
-      <Image
-        src="/images/profile.jpg"
-        alt="profile picture"
-        width="150"
-        height="150"
-      />
+      <Image src="/images/profile.jpg" alt="profile picture" width="150" />
       <p>
         Hi, I'm Morgan. My email is{" "}
         <a href="mailto:morgan@morgangallant.com">morgan@morgangallant.com</a>.
