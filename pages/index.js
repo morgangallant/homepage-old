@@ -40,7 +40,8 @@ export default function Index() {
       <Image
         src="/images/profile.jpg"
         alt="profile picture"
-        style={{ width: 150 }}
+        width="150"
+        height="150"
       />
       <p>
         Hi, I'm Morgan. My email is{" "}
