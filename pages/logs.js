@@ -165,13 +165,21 @@ export default function Logs() {
             </div>
           </div>
           <ul>
-            {days.get(keys[current]).map((l, i) => {
+            {(days.get(keys[current]) ?? []).map((l, i) => {
               const date = new Date(l.timestamp);
+              let str = date.toLocaleTimeString([], {
+                timeZone: "America/New_York",
+                hour: "2-digit",
+                minute: "2-digit",
+              });
+              str = str.replace("p.m.", "PM");
+              str = str.replace("a.m.", "AM");
+              if (str.charAt(1) == ":") {
+                str = "0" + str;
+              }
               return (
                 <li key={i}>
-                  {date.toLocaleTimeString("en-US", {
-                    timeZone: "America/New_York",
-                  })}
+                  <span style={{ fontWeight: "500" }}>{str}</span>
                   {": "}
                   {l.content}
                 </li>
